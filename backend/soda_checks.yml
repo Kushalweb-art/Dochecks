@@ -1,0 +1,7 @@
+checks for employees:
+  - row_count > 0:
+      name: "Row count should be greater than 0"
+  - missing_count(salary) < 5:
+      name: "Column should have less than 5 missing values"
+  - duplicate_count(salary) = 0:
+      name: "No duplicate values allowed"
